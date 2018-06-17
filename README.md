@@ -78,10 +78,11 @@ Main menu doesn't support multilevel, because I did not needed in this case. The
 ### CMB2
 
 ##### wks-form.php
-Template to show workshop form on front-end. Just create a page and assign a template "workshop-form"/
+Template to show workshop form on front-end. Just create a page and assign a template "workshop-form"
 
 ##### CMB2 Field Type: Google Maps / plugin /
 For showing maps on CMB2 forms you need to install plugin [CMB2 Map Field](https://github.com/mustardBees/cmb_field_map)
+install from wp plugin page or download from repository and place into WP plugin folder. Dont forget to activate this plugin. 
 
 ##### How to make maps work, after a new google map regulation rules
 You need to paste your Google map API code into `cmb-field-map.php`. Open file `cmb-field-map.php` and in section Enqueue scripts and styles paste your code into wp_register_script on line 80.
