@@ -1,7 +1,7 @@
 # FineDiv - 0.0.1
  This WP Theme is built from scratch by using Underscores and is specially customized for publishing content for web developers. FineDiv is my first theme and is build and customized to my needs, is not fancy looking on front end and would not be suitable to everyone.
 
- Theme has some nice features that you can use as reference. Feel free to use and customize any code from this theme. To be able easy use this theme in text editor I have repository with Gulp Im using for this theme on [ GitHub](https://github.com/StanSkrivanek/gulp-dev) to install all dependencies. To get an idea how is look like you can check [Webovkar.cz](https://webovkar.cz) with some dummy data.
+ Theme has some nice features that you can use as reference. Feel free to use and customize any code from this theme. To be able easy use this theme in text editor I have repository with Gulp Im using for this theme on [ GitHub](https://github.com/StanSkrivanek/gulp-dev) to install all dependencies. To get an idea how is look like you can check [Webovkar.cz](https://webovkar.cz) with some dummy data. Theme is still not complete, but basic functionality is done.
 
 ## Installing and running Gulp
 1. Place folder "gulp-dev" in to Wordpress "/themes/" folder
@@ -13,10 +13,10 @@
 
 ## Features
 - Custom comments
-- CMB2 build in
+- CMB2 (build in)
 - SVG icons
 - SVG Support
-- Contact form build from scratch wit messages saved in section "Messages"
+- Contact form
 - Workshop Form based on CMB2
 - Customizer additions
 - Checkbox "featured post" option in admin area
@@ -65,14 +65,17 @@ Main menu doesn't support multilevel, because I did not needed in this case. The
 - Messages
 
 ##### Workshop
+This CPT has special form to register all data for single workshop. Form it self is build wit cmb2 fields and beside classic input type has eg. calendar to pick date, map to select venue address, predefined checkboxes or repeatable files for workshop timetable witch contain time (Hour, Minutes) and description.
 
+After you publishing is this post shown on front page and workshops list page. On front page are shown only workshops that will be in next 30 days, including current day.
+
+There is possibility to show this form on front-end to let people (company) to register their workshop, but I have skip this step. For now.
 
 ##### CSS References
-
+This CPT does't have any special features beside just differentiated this post as special post type and be able to show this post type list by using WP_Query on specific page.
 
 ##### Messages
-
-
+CPT "messages" is saving data as email content, email address and name from Contact form I have build this form from scratch.
 
 
 ### CMB2
