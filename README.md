@@ -26,6 +26,7 @@
 - Footer - 2 menus (Footer, Social)
 -
 
+## Documentation is INCOMPLETE
 
 ### Menus
 This theme have, beside main menu, two custom menus. Main standard menu doesn't support multilevel menu, because I did not needed in this case. I Have registered two additional menus that are showing in footer. First is standard menu with links to parts of website,just create a new menu with any links and assign it to "Footer Last" menu from main option.
