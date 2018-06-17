@@ -1,7 +1,7 @@
 # FineDiv - 0.0.1
  This WP Theme is built from scratch by using Underscores and is specially customized for publishing content for web developers. FineDiv is my first theme and is build and customized to my needs, is not fancy looking on front end and would not be suitable to everyone.
 
- Theme has some nice features that you can use as reference. Feel free to use and customize any code from this theme. To be able easy use this theme in text editor I have repository with Gulp Im using for this theme on [ GitHub](https://github.com/StanSkrivanek/gulp-dev) to install all dependencies. To get an idea how is look like you can check [Webovkar.cz](https://webovkar.cz) with some dummy data. Theme is still not complete, but basic functionality is done.
+ Theme has some nice features that you can use as reference. Feel free to use and customize any code from this theme. To be able easy use this theme in text editor I have repository with Gulp Im using for this theme on [ GitHub](https://github.com/StanSkrivanek/gulp-dev) to install all dependencies. To get an idea how is look like you can check [Webovkar.cz](https://webovkar.cz) with some dummy data. Theme is still not complete, and I'm still working on some features but basic functionality is done.
 
 ## Installing and running Gulp
 1. Place folder "gulp-dev" in to Wordpress "/themes/" folder
@@ -36,8 +36,6 @@ Second is called "Social Media" and its feature is using SVG icons for links ins
 ### Custom comments
 To avoid long scrolling over all comments, I have set this section to show only first two comments with button to show the rest. Above comments section is comment counter.
 
-
-
 ### Customizer Options
 Extended options available from the Customizer:
 
@@ -57,6 +55,9 @@ Posts and pages can have Featured Images.
 
 ### Menu
 Main menu doesn't support multilevel, because I did not needed in this case. There are two additional menus in footer. First is standard secondary menu where you can add links to pages. Second is called "Social" and its feature is using SVG icons for links instead name. All you need is just add link and icon will be loaded automatically. To see what SVG icons are available check svg/svg-icons.svg.
+
+### Standard Post
+I have add into standard post admin area two checkboxes "Featured" and "Sponsored".
 
 
 ### CPT
@@ -107,9 +108,10 @@ I have add related post under a single article and they are:
 - ignore empty
 
 ### Footer
-In footer are two sections. First is standard
+Contain two menu. for more detail check Menus section
 
 ### Prism
+To showing code I have decided to use [Prism.js](https://prismjs.com)
 Basic CSS style is in Sass/Modules/_prism.scss and is compiled into style.css
 adding code into article
 ```
@@ -124,7 +126,7 @@ Included languages:
 
 
 Included plugins:
--
+ EDIT
 
 
 ### Licenses and External Assets
