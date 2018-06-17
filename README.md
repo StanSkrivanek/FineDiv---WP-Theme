@@ -5,10 +5,10 @@
 
 ## Installing and running Gulp
 1. Place folder "gulp-dev" in to Wordpress "/themes/" folder
-2. To change proxy server and default browser you need to change two settings. Open Gulpfile.js and go to section "watch everything" (line 73). On line 76 is my default bowser "firefox" to set your default browser just type its name eg. "google chrome", "safari" ect. Next you need to change your proxy and port if needed. If you mac user using MAMP and its standard setting you need only change name of website eg. localhost:8888/yourwebsitename. If you need change port also.
-3. When setting is done, open terminal and navigate to gulp folder. Easiest way is to type in terminal `cd`(change directory) and drag and drop "gulp-dev" folder into terminal
-4. once you are in gulp folder type `gulp init`, it will start installing all dependencies
-5. when installing is finished stay in this folder and type `gulp`. This will start local environment, automatically open browser with your website on 192.168.1.1:8080/yourwebsitename. Any device reaching this address will be synchronized so you ca check how website is looking and behaving on many mobile device
+2. To change proxy server and default browser you need to change two settings. Open Gulpfile.js and go to section "watch everything" (line 73). On line 76 is my default bowser "firefox" to set your default browser just type its name eg. "google chrome", "safari" ect. Next you need to change your proxy and port if needed. If you are an Apple Mac user using MAMP standard setting, you only need change name of website eg. localhost:8888/yourwebsitename. If you need a specific port, change port also.
+3. When this setting is done, open terminal and navigate to gulp-dev folder. Easiest way is to type in terminal `cd`(change directory) and drag and drop "gulp-dev" folder into terminal
+4. Once you are in gulp-dev folder type `gulp init`, it will start installing all dependencies
+5. When installation of dependencies is complete stay in this folder and type `gulp`. This will start local environment, automatically open browser with your website on 192.168.1.1:8080/yourwebsitename. Any device reaching this address will be synchronized, and you will be able to check how website is looking and behaving on any mobile device (or other browser) at the same time
 
 
 ## Features
