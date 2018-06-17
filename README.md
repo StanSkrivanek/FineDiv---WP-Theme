@@ -66,9 +66,9 @@ I have add into standard post admin area two checkboxes "Featured" and "Sponsore
 - Messages
 
 ##### Workshop
-This CPT has special form to register all data for single workshop. Form it self is build wit cmb2 fields and beside classic input type has eg. calendar to pick date, map to select venue address, predefined checkboxes or repeatable files for workshop timetable witch contain time (Hour, Minutes) and description.
+This CPT has special form to register all data for single workshop. Form it self is build with cmb2 fields and beside classic input type has eg. calendar to a pick date, google map to select venue address, predefined checkboxes or repeatable files for workshop timetable witch contain selectable time (Hour, Minutes) and description.
 
-After you publishing is this post shown on front page and workshops list page. On front page are shown only workshops that will be in next 30 days, including current day.
+After you publish workshop post, post is shown on front page and workshops list page. On front page are shown only workshops that will be running in next 30 days, including current day.
 
 There is possibility to show this form on front-end to let people (company) to register their workshop, but I have skip this step. For now.
 
@@ -133,3 +133,6 @@ Included plugins:
 FineDiv is distributed under the terms of the GNU GPL v2
 
 // FineDiv's code base started out as _s (http://underscores.me) as it were on November 28, 2017.# FineDiv---WP-Theme
+
+### NOTES
+Be aware that version 0.0.1 have some unused files or code that is commented out. In SASS folder are some classes that aren't used such colors variables or classes for Ninja form I was testing.   
