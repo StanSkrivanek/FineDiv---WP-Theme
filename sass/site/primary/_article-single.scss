@@ -1,0 +1,319 @@
+/**
+* =============================
+* SINGLE POST
+* =============================
+*/
+
+// Article HEADER
+.article-header {
+    display: block;
+    padding: 1em;
+    background-color: $blueGray_50;
+    .single-header__wrapper {
+        max-width: $screen__lg;
+        margin: 0 auto;
+        .special-post-data {
+            // display: flex;
+            margin-bottom: 5px;
+            .special-data {
+                display: inline-block;
+                margin: 0 5px;
+                margin-left: 0;
+                padding: 0 15px;
+                border-radius: 3px;
+                background-color: $blueGray_500;
+                color: #EEE;
+                font-size: .5em;
+                text-transform: uppercase;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+        .article-title {
+            margin-top: .5em;
+            margin-bottom: .3em;
+            line-height: 1em;
+            font-size: 2em;
+        }
+    }
+}
+
+.article-post__stats {
+    ul {
+        list-style: none;
+        padding: 0; //margin-left: 0;
+        //margin-top: 0;
+        //margin-bottom: 0;
+        margin: 0;
+        .article-post__event-town,
+        .article-post__event-date,
+        .article-post__comments_count,
+        .article-post__reading_time {
+            font-size: .8em;
+            display: inline-block;
+            padding-right: 15px;
+            .article-post__stats-icon {
+                display: inline-block;
+                vertical-align: middle;
+                padding-right: 5px;
+                svg {
+                    margin: 0 auto;
+                    width: 18px;
+                    height: 18px;
+                    fill: $theme__color-main_red;
+                }
+            }
+        }
+    }
+}
+
+.article-post__posted_on {
+    .meta-posted_on {
+        font-size: .8em;
+        display: block;
+        a {
+            color: $blueGray_500;
+        }
+    }
+    .meta-author {
+        display: inline-block;
+        color: $blueGray_300;
+    }
+}
+
+// Single Post Content
+// Article Featured Image
+.index-image {
+    img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
+// Article Content
+.article-content {
+    max-width: 40em;
+    padding: 0 1em;
+    margin: 0 auto;
+    .article-footer__categories {
+        margin-bottom: 2em;
+        clear: both;
+        padding-top: 3em;
+        ul {
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 150px);
+            grid-gap: 5px;
+            text-align: center;
+            list-style-type: none;
+            li {
+                padding: 0;
+                margin: 0;
+                align-items: stretch;
+                border: 1px solid #EEE;
+                border-radius: 3px;
+                &:hover {
+                    //background-color: $theme__color-main_red;
+                    a {
+                        color: $theme__color-main_red;
+                    }
+                    .cat-posts-count {
+                        sup {
+                            color: $blueGray_200;
+                        }
+                    }
+                    border-color: $blueGray_200;
+                }
+                a {
+                    color: $color__text-header;
+                    font-size: .75em;
+                }
+                .cat-posts-count {
+                    sup {
+                        font-size: .6em;
+                        color: $blueGray_50;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.article-cssr__categories {
+    // margin-bottom: 2em;
+    // padding-top: 3em;
+    clear: both;
+    ul {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 150px);
+        grid-gap: 5px;
+        text-align: center;
+        list-style-type: none;
+        li {
+            padding: 0;
+            margin: 0;
+            align-items: stretch;
+            border: 1px solid #FFF;
+            border-radius: 3px;
+            &:hover {
+                //background-color: $theme__color-main_red;
+                a {
+                    color: $theme__color-main_red;
+                }
+                .cat-posts-count {
+                    sup {
+                        color: $blueGray_200;
+                    }
+                }
+                border-color: $blueGray_200;
+            }
+            a {
+                color: $color__text-header;
+                font-size: .75em;
+            }
+            .cat-posts-count {
+                sup {
+                    font-size: .6em;
+                    color: $blueGray_50;
+                }
+            }
+        }
+    }
+}
+
+/**
+    ========================================
+        Post footer
+    ========================================
+ */
+
+//  POST NAVIGATION - Previous / Next
+.post-nav__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    padding: 1em 0 0 0;
+    .post-nav__right_wrapper,
+    .post-nav__left_wrapper {
+        display: flex;
+        height: 100px;
+        span {
+            align-self: center;
+        }
+    }
+    .post-nav__left_wrapper {
+        background-color: rgba(0, 0, 0, 0.01);
+        height: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+    .post-nav__right_wrapper {
+        background-color: rgba(0, 0, 0, 0.01);
+        height: 100%;
+        padding: 10px;
+        text-align: right;
+    }
+    .post-nav__icon {
+        padding-top: 10px;
+        flex: 0 0 40px;
+        svg {
+            width: 1em;
+            height: 2em;
+            fill: rgba(0, 0, 0, 0.1);
+        }
+    }
+    .post-nav__title {
+        flex: 1;
+        font-size: .8em;
+        a:hover {
+            color: $color__link-hover;
+        }
+    }
+}
+
+// RELATED POST
+// https://www.hongkiat.com/blog/wordpress-related-posts-without-plugins/
+.related-posts {
+    max-width: 40em;
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+.related-posts-by-tag-container {
+    margin: 20px 0;
+    .related-main-header {
+        border-top: 1px solid $blueGray_100;
+        border-bottom: 1px solid $blueGray_100;
+        text-align: center;
+        h3 {
+            font-size: 1em;
+            margin: .05em 0;
+        }
+    }
+    .related-posts-by-tags__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 5px;
+        margin-top: 1em;
+        .related-post__wrap {
+            display: grid;
+            grid-template-columns: 1fr;
+            box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+            background-color: $theme__color-main_red;
+            padding: 1.4em;
+            .related-post__link {
+                display: block;
+                font-size: 1.4em;
+                line-height: 1em;
+                margin-bottom: 1em;
+                a {
+                    color: #FFF;
+                    &:hover {
+                        color: $hover_over__oldrose;
+                    }
+                }
+            }
+            .related-post__category {
+                align-self: end;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    display: block;
+                    line-height: 1em;
+                    li {
+                        line-height: .8em; //padding: 1px 10px 3px;
+                        display: inline-block; //text-align: center;
+                        list-style: none; //border: 1px solid #EEE;
+                        a {
+                            font-size: .6em;
+                            color: #FFF;
+                            &:hover {
+                                color: $hover_over__oldrose;
+                            }
+                        }
+                    }
+                }
+            } //.related-post__data {
+            //    display: flex;
+            //    .related-post__image {
+            //        flex: 1;
+            //        img {
+            //            height: 100%;
+            //            object-fit: cover;
+            //            }
+            //        }
+            //
+            //    .related-post__excerpt {
+            //        flex: 3;
+            //        font-size: .7em;
+            //        padding: 10px;
+            //        }
+            //    }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.red{
+    color: $theme__color-main_red;
+    }
+.dark{
+    color: $theme__color-main_02;
+    }
+.midlight{
+    color: $blueGray_200;
+    }
+.light-smaller-it{
+    color: $blueGray_200;
+    font-size: .9em;
+    font-style: italic;
+    }
+.stripe-title-mid{
+    font-size: 1.8em;
+
+    }
+.column{
+
+    h3{
+        margin: .5em auto;
+        }
+    ul{
+        //padding: 0;
+        margin: 0;
+        }
+    }
+.block{
+    display: block;
+    }
+.clearall{
+    margin: 0;
+    padding: 0;
+    }
+.name{
+    text-transform: capitalize;
+    font-size: .8em;
+    display: inline-block;
+    //color: #607D8B;
+    }
+.wks_price{
+    font-size: 1.6em;
+    color: #3569B2;
+    }
+.wks-timetable-time{
+    font-weight: 800;
+    }
+.form-map-address{
+    font-size: 1.2em;
+    font-weight: 800;
+    }
+.venue-location-address{
+    background: $theme__color-main_red;
+    padding-bottom: 1em;
+    text-align: center;
+    .venue-address{
+
+        }
+    p, h1, h3, span{
+        color: #FFF;
+        margin: 0 auto;
+        }
+    p{
+        font-size: 1.6em;
+        }
+    }
+.p-top{
+    padding-top: 1em;
+    }
+.map{
+    
+    }
+//.yes::before {
+//    content: '\f348';
+//    display: inline-block;
+//    font: 400 18px/1 dashicons;
+//    speak: none;
+    //margin: 0 8px 0 -2px;
+    //vertical-align: top;
+//}

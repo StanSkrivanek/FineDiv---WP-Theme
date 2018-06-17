@@ -1,0 +1,119 @@
+.events-post__stats,
+.article-cards__front_page {
+    // content-search.php
+    display: grid;
+    grid-gap: 5px;
+    padding: 5px 5px 0 5px;
+    grid-template-columns: repeat(3, 1fr);
+    @media screen and (max-width: $screen__lg) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: $screen__md) {
+        grid-template-columns: 1fr;
+        margin-bottom: 0;
+    }
+}
+
+.article-cards__front_page {
+    .article-card__wrapper {
+        background-color: $theme__color-main_red;
+        padding: 1em;
+        display: grid;
+        border-radius: 3px;
+        .article-card__front_page {
+            box-shadow: none;
+            display: grid;
+            .article-card__header {
+                padding-bottom: 1em;
+                .article-post__posted_on {
+                    padding: 0;
+                    .meta-posted_on {
+                        display: block;
+                    }
+                }
+                .article-title {
+                    font-size: 1.4em;
+                    padding: 0;
+                    a {
+                        color: #FFF;
+                        &:hover {
+                            color: $hover_over__oldrose;
+                        }
+                    }
+                }
+                .article-post__stats {
+                    ul {
+                        margin: 0;
+                    }
+                    svg {
+                        fill: #FFF;
+                    }
+                }
+            }
+            .article-card__excerpt {
+                padding-bottom: 1em;
+                a {
+                    color: #FFF;
+                }
+            }
+            .article-card__footer {
+                align-self: self-end;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                    grid-gap: 5px;
+                    text-align: center;
+                    list-style-type: none;
+                    li {
+                        padding: 0;
+                        margin: 0;
+                        align-items: stretch;
+                        border: 1px solid $hover_over__red;
+                        border-radius: 3px;
+                        &:hover {
+                            background-color: $hover_over__red;
+                        }
+                        a {
+                            color: #FFF;
+                            font-size: 0.75em;
+                        }
+                        .cat-posts-count {
+                            sup {
+                                font-size: .6em;
+                                color: #FFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hp-featured {
+        background-color: $code__css;
+        .article-card__front_page {
+            .article-card__footer {
+                ul li {
+                    border: 1px solid #FFF;
+                }
+            }
+        }
+    }
+    .entry-date,
+    .nameWhat,
+    .article-card__excerpt,
+    ul li,
+    a {
+        color: #FFF;
+    }
+}
+
+.events-post__stats {
+    ul {
+        margin: 0;
+    }
+    svg {
+        fill: #FFF;
+    }
+}

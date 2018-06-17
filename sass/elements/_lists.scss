@@ -1,0 +1,51 @@
+ul, ol {
+    margin: 0 0 1.5em 3em;
+    }
+
+ul {
+    list-style: disc;
+    }
+
+ol {
+    list-style: decimal;
+    }
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+    }
+
+dt {
+    font-weight: bold;
+    }
+
+dd {
+    margin: 0 1.5em 1.5em;
+    }
+
+.fp-events{
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.05);
+    }
+
+.cptul-stripe-2 {
+    max-width: 90%;
+    padding: 0;
+    margin: 1em auto;
+    list-style-type: none;
+
+    }
+
+.cptli-stripe-2--wrap {
+    box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1em;
+    .cptli-stripe-2--header {
+        padding: 1em;
+        background: rgba(0, 0, 0, 0.05);
+        }
+    .cptli-stripe-2--data {
+        margin-bottom: .5em;
+        padding: 1em;
+        }
+    }

@@ -1,0 +1,28 @@
+.cssr_content_container {
+
+    .css-props__wrapper {
+        background-color: #FFF;
+        max-width: 45em;
+        margin: 1em auto ;
+        padding: .5em 1em;
+        .title {
+            font-size: 1em;
+            }
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            grid-gap: 5px;
+            text-align: center;
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+            li {
+                border: 1px solid $blueGray_200;;
+                padding: 5px 10px;
+                a {
+                    display: block;
+                    }
+                }
+            }
+        }
+    }

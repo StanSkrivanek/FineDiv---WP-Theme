@@ -1,0 +1,32 @@
+// PAGINATION
+
+.articles__nav{
+    display: flex;
+    padding: 1em 0;
+    justify-content: center;
+
+    .page-numbers{
+        padding: 5px 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        color: $color__text-main;
+        &:hover{
+            color: $theme__color-main_red;
+            }
+        @media screen and (max-width: $screen__md) {
+            font-size: .8em;
+            }
+        }
+    .current{
+        color: $color__link-hover;
+        &:hover{
+            color: $color__link-hover;
+            }
+        }
+    .dots{
+        border: none;
+        &:hover{
+            color: $color__text-main;
+            }
+        }
+    }

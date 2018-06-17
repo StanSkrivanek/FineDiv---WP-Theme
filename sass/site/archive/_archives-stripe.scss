@@ -1,0 +1,33 @@
+.archives-stripe__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1.4fr;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    &:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.02);
+    }
+    @media screen and (max-width: $screen__md) {
+        grid-template-columns: 1fr;
+        font-size: .8em;
+    }
+    .archives-post__posted_on {
+        align-self: center;
+        padding: 10px;
+        a {
+            color: $color__text-main;
+        }
+    }
+    .stripe-title-wrap {
+        padding: 0 10px;
+        align-self: center;
+        .archives-title {
+            font-size: 1em;
+        }
+    }
+    .archives-post__stats {
+        align-self: center;
+        ul {
+            margin: 0;
+        }
+    }
+}

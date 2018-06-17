@@ -1,0 +1,22 @@
+.category-header{
+    background-color: $theme__color-main_red;
+    color: #FFFFFF;
+    padding: 0 1em;
+    .page-title{
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 1.6em;
+        color: #FFFFFF;
+        }
+    }
+
+
+.archive-description{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    p{
+        margin: .5em 0;
+        padding-top: .5em;
+        }
+    }

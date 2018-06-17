@@ -1,0 +1,288 @@
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: $theme__color-main_red;
+    padding: 20px;
+    .header-ls {
+        display: flex;
+        flex: 0 0 200px;
+        justify-content: center;
+        .custom-logo {
+            height: 60px;
+            width: auto;
+            display: block;
+            padding: 0 10px;
+            @media screen and (max-width: $screen__xs) {
+                height: 60px;
+            }
+        }
+    }
+    .ms-rs-wrap {
+        display: flex;
+        flex: 1;
+        .header-ms {
+            flex-grow: 1;
+            flex-shrink: 0;
+            .main-nav {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                .menu-all-pages-container {
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, 120px);
+                        grid-gap: 5px;
+                        text-align: center;
+                        list-style-type: none;
+                        justify-content: center;
+                        li {
+                            &:hover {
+                                //background-color: $hover_over__red; //#ECEFF1
+                                a {
+                                    color: $hover_over__oldrose;
+                                }
+                            }
+                            @media (max-width: $screen__md) {
+                                padding: 10px;
+                                border: 1px solid $hover_over__oldrose;
+                            }
+                        }
+                    }
+                }
+                a {
+                    color: #FFF;
+                    font-size: 18px;
+                    display: block;
+                }
+            }
+        } // header right part
+        .header-rs {
+            display: flex;
+            .btn-topics-wrap,
+            .btn-search-wrap {
+                align-self: center;
+                flex: 1;
+                &:hover {
+                    svg {
+                        fill: #37474F;
+                    }
+                }
+                .btn-toggle-topics,
+                .open-toggle-search {
+                    //button
+                    width: 100%;
+                    border: none;
+                    border-radius: 0;
+                    box-shadow: none;
+                    background: none;
+                    .icon-menu,
+                    .icon-topics,
+                    .icon-search {
+                        width: 100%;
+                        flex-basis: 50px;
+                        fill: #FFF;
+                        ;
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                } //.open-toggle-menu{
+                //    display: none;
+                //    }
+            }
+            .btn-menu-wrap {
+                align-self: center;
+                flex: 1;
+                display: none;
+                .open-toggle-menu {
+                    //button
+                    width: 100%;
+                    border: none;
+                    border-radius: 0;
+                    box-shadow: none;
+                    background: none;
+                    &:hover {
+                        svg {
+                            fill: #37474F;
+                        }
+                    }
+                    .icon-menu {
+                        width: 100%;
+                        flex-basis: 50px;
+                        fill: #FFF;
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//  =====================
+//  SEARCH SECTION
+//  =====================
+.search-section {
+    border-radius: 0;
+    padding: 1em 0;
+    background-color: $theme__color-main_red;
+    display: none;
+    .search-container {
+        padding: 0 1rem;
+        .search-form {
+            display: flex;
+            height: 48px;
+            max-width: 800px;
+            margin: 0 auto;
+            label {
+                position: absolute;
+                display: none;
+            }
+            .search-text-area {
+                display: flex;
+                flex: 1;
+                .search-field {
+                    flex: 1;
+                    height: 100%;
+                    padding-left: 1em;
+                    -webkit-appearance: none; // needed for safari styling
+                    font-family: inherit;
+                    outline: 0;
+                    border: none;
+                    border-radius: 2px 0 0 2px;
+                    color: $theme__color-main_red;
+                    &::placeholder {
+                        color: #DADADA;
+                    }
+                    @media screen and (max-width: $screen__xs) {
+                        width: 250px;
+                    }
+                }
+            }
+            .btn-close-search {
+                width: 50px;
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                background: #FFF;
+                -webkit-appearance: none;
+                border: none;
+                border-radius: 0 2px 2px 0;
+                .close-x {
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/**
+*   ===========================
+*       Topics area
+*   ===========================
+*/
+
+.categories-section {
+    background-color: $theme__color-main_red;
+    padding: 1rem 0;
+    display: none;
+    ul {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 200px);
+        grid-gap: 5px;
+        text-align: center;
+        justify-content: center;
+        list-style-type: none;
+        li {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: stretch;
+            border: 1px solid $hover_over__red;
+            border-radius: 3px;
+            &:hover {
+                background-color: $hover_over__red;
+                a {
+                    color: #FFF;
+                    ;
+                }
+            }
+            a {
+                flex: 1;
+                align-items: stretch;
+                padding: 15px;
+                color: #FFF;
+            }
+            .cat-posts-count {
+                position: relative;
+                flex: 0 1 38px;
+                align-content: center;
+                font-size: .7em;
+                sup {
+                    font-size: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -o-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    a {
+        font-size: .75em;
+    }
+}
+
+@media screen and (max-width: $screen__xs) {
+    // 400
+}
+
+@media screen and (max-width: $screen__sm) {
+    // 640
+}
+
+@media screen and (max-width: $screen__md) {
+    // 768
+    .site-header {
+        .ms-rs-wrap {
+            display: block;
+            .header-ms {
+                display: none;
+            }
+            .header-rs {
+                .btn-menu-wrap {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen__lg) {
+    // 1024
+    .site-header {
+        display: block;
+    }
+}
+
+.visible {
+    display: block !important;
+}
+
+//.btn-menu-wrap{
+//    display: none
+//    }

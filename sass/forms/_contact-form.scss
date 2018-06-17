@@ -1,0 +1,211 @@
+// Contact form
+.contact-page {
+    h1 {
+        text-align: center;
+        }
+    .messages-icon {
+        display: block;
+        height: 100px;
+        margin-bottom: 2em;
+        text-align: center;
+        svg {
+            fill: $blueGray_300;
+            }
+        }
+
+    .contact-form {
+
+        .FineDiv-contact-form {
+            padding: 40px 0;
+            //max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+
+            .form-group {
+                margin-bottom: 30px;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 2px;
+                    background-color: $blueGray_100;
+                    }
+
+                .form-control-msg {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 12px;
+                    }
+
+                &.has-error {
+                    &:before {
+                        color: #A94442;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+.text-danger {
+    color: $theme__color-main_red;
+    }
+
+.FineDiv-form-control {
+    min-height: 2em;
+    resize: vertical;
+    border: none !important;
+    border-radius: 0;
+    width: 100%;
+    padding: 8px 15px;
+    outline: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+
+    &::-webkit-input-placeholder {
+        text-transform: uppercase;
+        }
+
+    &::-moz-placeholder {
+        text-transform: uppercase;
+        }
+
+    //&:-ms-placeholder {
+    //    text-transform: uppercase;
+    //    }
+
+    &:-moz-placeholder {
+        text-transform: uppercase;
+        }
+
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: none;
+        }
+    }
+
+.form-radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.01);
+    padding: 1em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    .topics-left,
+    .topics-right{
+        flex: 1 0 300px;
+        }
+    span {
+        display: block;
+        }
+    // Radio Buttons section
+
+    input[type="radio"]:checked,
+    input[type="radio"]:not(:checked) {
+        //position: absolute;
+        //left: -99999px;
+        //display: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        }
+    input[type="radio"]:checked + label,
+    input[type="radio"]:not(:checked) + label {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        color: #666;
+        }
+    input[type="radio"]:checked + label:before,
+    input[type="radio"]:not(:checked) + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #DDD;
+        border-radius: 100%;
+        background: #FFF;
+        }
+    input[type="radio"]:checked + label:after,
+    input[type="radio"]:not(:checked) + label:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #F87DA9;
+        //color: #F87DA9;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        }
+    input[type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        }
+    input[type="radio"]:checked + label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+    }
+
+.btn-FineDiv-form {
+    //@include animate(all, 320ms);
+    //border: 1px solid $blueGray_300;
+    background-color: $btn-focus;
+    border-radius: 2px;
+    font-size: 26px;
+    padding: 14px 60px;
+    margin-bottom: 1em;
+    color: $blueGray_700;
+    font-weight: 100;
+    border: none;
+
+    &:hover,
+    &:focus {
+        //background-color: $btn-focus;
+        color: $blueGray_700;
+        background-color: #96FFD1;
+        border: none;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+        }
+    }
+
+.text-center {
+    text-align: center;
+    }
+
+.form-control-msg {
+    display: none;
+    }
+
+.has-error {
+    .form-control-msg {
+        display: block;
+        }
+    }
+
+.js-show-feedback {
+    display: block;
+    }
+textarea {
+    //border: 0 none white;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    }
+
