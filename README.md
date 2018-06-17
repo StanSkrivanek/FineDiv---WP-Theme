@@ -1,7 +1,7 @@
 # FineDiv - 0.0.1
  This WP Theme is built from scratch by using Underscores and is specially customized for publishing content for web developers. FineDiv is my first theme and is build and customized to my needs, is not fancy looking on front end and would not be suitable to everyone.
 
- Theme has some nice features that you can use as reference. Feel free to use and customize any code from this theme. To be able easy use this theme in text editor I have included Gulp to install all dependencies I'm using. To get an idea how is look like you can check [Webovkar.cz](https://webovkar.cz) with some dummy data.
+ Theme has some nice features that you can use as reference. Feel free to use and customize any code from this theme. To be able easy use this theme in text editor I have repository with Gulp Im using for this theme on [ GitHub](https://github.com/StanSkrivanek/gulp-dev) to install all dependencies. To get an idea how is look like you can check [Webovkar.cz](https://webovkar.cz) with some dummy data.
 
 ## Installing and running Gulp
 1. Place folder "gulp-dev" in to Wordpress "/themes/" folder
