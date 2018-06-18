@@ -1,5 +1,5 @@
 # FineDiv - 0.0.1
- This WP Theme is built from scratch by using Underscores and is specially customized for publishing content for web developers. FineDiv is my first theme and is build and customized to my needs, is not fancy looking on front end and would not be suitable to everyone.
+ This WP Theme is built from scratch by using Underscores and is specially customized for publishing content for web developers. FineDiv is my first theme and is build and customized to my needs, is not fancy looking on front end, doesn't have sidebar(but is included in code), so it may not be suitable to everyone.
 
  Theme has some nice features that you can use as reference. Feel free to use and customize any code from this theme. To be able easy use this theme in text editor I have repository with Gulp Im using for this theme on [ GitHub](https://github.com/StanSkrivanek/gulp-dev) to install all dependencies. To get an idea how is look like you can check [Webovkar.cz](https://webovkar.cz) with some dummy data. Theme is still not complete, and I'm still working on some features but basic functionality is done.
 
@@ -10,28 +10,33 @@
 4. Once you are in gulp-dev folder type `gulp init`, it will start installing all dependencies
 5. When installation of dependencies is complete stay in this folder and type `gulp`. This will start local environment, automatically open browser with your website on 192.168.1.1:8080/yourwebsitename. Any device reaching this address will be synchronized, and you will be able to check how website is looking and behaving on any mobile device (or other browser) at the same time
 
+## Documentation is INCOMPLETE
 
 ## Features
+- Custom Menus
 - Custom comments
+- Customizer Options
+- Featured Images
+- Widgets
+- Featured and Sponsored checkbox (Standard Post)
+- CPT (Workshop, CSS References, Messages)
 - CMB2 (build in)
+- Related post (based on tags)
+- Prism.js (a lightweight, extensible syntax highlighter)
 - SVG icons
 - SVG Support
 - Contact form
-- Workshop Form based on CMB2
+- Workshop Form (CMB2)
 - Customizer additions
-- Checkbox "featured post" option in admin area
-- CPT
-- Related post (based on tags)
-- Prism.js (a lightweight, extensible syntax highlighter)
-- Footer - 2 menus (Footer, Social)
--
+- Page templates
 
-## Documentation is INCOMPLETE
+
+
 
 ### Menus
-This theme have, beside main menu, two custom menus. Main standard menu doesn't support multilevel menu, because I did not needed in this case. I Have registered two additional menus that are showing in footer. First is standard menu with links to parts of website,just create a new menu with any links and assign it to "Footer Last" menu from main option.
+This theme have, beside main menu, two custom menus. Main standard menu doesn't support multilevel menu, because I do not need it in this case. I have registered two additional menus that are placed in footer. First is standard menu with links to pages of website. Just create a new menu with any links and assign it to "Footer Last" menu from main option.
 
-Second is called "Social Media" and its feature is using SVG icons for links instead of a name. All you need to create this menu is just add link to sany social network and icon will be loaded automatically. To see what SVG icons are available check svg/svg-icons.svg.
+Second menu is called "Social Media" and its feature is using SVG icons for links instead of a name. All you need to create this menu is just adding link to any social network and its icon will be loaded automatically. To see what SVG icons are available check svg/svg-icons.svg.
 
 ### Custom comments
 To avoid long scrolling over all comments, I have set this section to show only first two comments with button to show the rest. Above comments section is comment counter.
@@ -52,30 +57,25 @@ Posts and pages can have Featured Images.
 2. Footer widgets
 3. Page sidebar
 
-
-### Menu
-Main menu doesn't support multilevel, because I did not needed in this case. There are two additional menus in footer. First is standard secondary menu where you can add links to pages. Second is called "Social" and its feature is using SVG icons for links instead name. All you need is just add link and icon will be loaded automatically. To see what SVG icons are available check svg/svg-icons.svg.
-
-### Standard Post
+### "Featured" and "Sponsored" checkbox (Standard Post)
 I have add into standard post admin area two checkboxes "Featured" and "Sponsored".
-
 
 ### CPT
 - Workshop
 - CSS References
 - Messages
 
-##### Workshop
+#### Workshop
 This CPT has special form to register all data for single workshop. Form it self is build with cmb2 fields and beside classic input type has eg. calendar to a pick date, google map to select venue address, predefined checkboxes or repeatable files for workshop timetable witch contain selectable time (Hour, Minutes) and description.
 
 After you publish workshop post, post is shown on front page and workshops list page. On front page are shown only workshops that will be running in next 30 days, including current day.
 
 There is possibility to show this form on front-end to let people (company) to register their workshop, but I have skip this step. For now.
 
-##### CSS References
+#### CSS References
 This CPT does't have any special features beside just differentiated this post as special post type and be able to show this post type list by using WP_Query on specific page.
 
-##### Messages
+#### Messages
 CPT "messages" is saving data as email content, email address and name from Contact form I have build this form from scratch.
 
 
@@ -107,9 +107,6 @@ I have add related post under a single article and they are:
 - ignore Sticky
 - ignore empty
 
-### Footer
-Contain two menu. for more detail check Menus section
-
 ### Prism
 To showing code I have decided to use [Prism.js](https://prismjs.com)
 Basic CSS style is in Sass/Modules/_prism.scss and is compiled into style.css
@@ -128,6 +125,28 @@ Included languages:
 Included plugins:
  EDIT
 
+### SVG icons
+ There is a bunch of social icons (borrowed from WP 2017 theme) that I'm using in Social Menu. I have also add some my custom SVG icons that you can find eg. in headers (time, comments) but there is a bit more. for more details check svg/svg-icons.svg.
+
+### SVG Support
+I have add standard SVG support and known cropping problem on SVG images is sorted also
+
+### Contact form
+To display contact form you need to create page called 'contact'. Contact form is created from scratch and feature bunch of radio buttons to select what is it about(also shown in admin area in CPT "Messages"). Other feature is expanding textarea (on key up) because I don't like static frame of text area. I thing is look fancy and is quiet nice :)
+
+### Workshop Form (CMB2)
+
+### Customizer additions
+
+### Page templates
+
+1. Archives - standard articles archive
+Create Page and assign template "Archive"
+2. Workshop-List - Workshop archive
+ Create page and assign template "Workshop-List". This page will show workshops with Excerpt field description form workshop form
+3. CSS Props
+ Create page and assign template "CSS Props". This page will show only articles from CPT CSS Ref. To show post in under certain title you need to add props type. If you want to add article eg. under title Pseudo Class add to Props section "Pseudo Class" if under @rule add "rule". This page has very specific style.
+
 
 ### Licenses and External Assets
 FineDiv is distributed under the terms of the GNU GPL v2
@@ -135,4 +154,4 @@ FineDiv is distributed under the terms of the GNU GPL v2
 // FineDiv's code base started out as _s (http://underscores.me) as it were on November 28, 2017.# FineDiv---WP-Theme
 
 ### NOTES
-Be aware that version 0.0.1 have some unused files or code that is commented out. In SASS folder are some classes that aren't used such colors variables or classes for Ninja form I was testing.   
+Be aware that version 0.0.1 have some unused files or code that is commented out. In SASS folder are some classes that aren't used such colors variables or classes for Ninja form I was testing.
